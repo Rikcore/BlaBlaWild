@@ -7,33 +7,33 @@ import android.os.Parcelable;
  * Created by apprenti on 05/03/17.
  */
 
-public class informationsclasse implements Parcelable {
+public class SearchRequestModel implements Parcelable {
 
     private String mDepart;
     private String mDestination;
     private String mDate;
 
-    public informationsclasse(String depart, String destination, String date){
+    public SearchRequestModel(String depart, String destination, String date){
         this.mDepart = depart;
         this.mDestination= destination;
         this.mDate= date;
     }
 
-    protected informationsclasse(Parcel in) {
+    protected SearchRequestModel(Parcel in) {
         mDepart = in.readString();
         mDestination = in.readString();
         mDate = in.readString();
     }
 
-    public static final Creator<informationsclasse> CREATOR = new Creator<informationsclasse>() {
+    public static final Creator<SearchRequestModel> CREATOR = new Creator<SearchRequestModel>() {
         @Override
-        public informationsclasse createFromParcel(Parcel in) {
-            return new informationsclasse(in);
+        public SearchRequestModel createFromParcel(Parcel in) {
+            return new SearchRequestModel(in);
         }
 
         @Override
-        public informationsclasse[] newArray(int size) {
-            return new informationsclasse[size];
+        public SearchRequestModel[] newArray(int size) {
+            return new SearchRequestModel[size];
         }
     };
 

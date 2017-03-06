@@ -8,8 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import static wildsas.blablawild.R.id.activity_search_itinerary;
-
 public class SearchItineraryActivity extends AppCompatActivity {
 
     EditText editText1;
@@ -42,7 +40,7 @@ public class SearchItineraryActivity extends AppCompatActivity {
                         String mDepart = editText1.getText().toString();
                         String mDestination = editText2.getText().toString();
                         String mDate = editText3.getText().toString();
-                        informationsclasse trajet= new informationsclasse(mDepart, mDestination, mDate);
+                        SearchRequestModel trajet= new SearchRequestModel(mDepart, mDestination, mDate);
                         Intent intentgoresults = new Intent(SearchItineraryActivity.this, ViewSearchItineraryResultsListActivity.class);
                         intentgoresults.putExtra(SearchItineraryActivity.EXTRA_TRAJET, trajet);
 

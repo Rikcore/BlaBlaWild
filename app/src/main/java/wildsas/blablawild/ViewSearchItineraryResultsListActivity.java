@@ -17,8 +17,8 @@ public class ViewSearchItineraryResultsListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_view_search_itinerary_results_list);
 
         Intent intentGoResults = getIntent();
-        informationsclasse trajet = getIntent().getExtras().getParcelable(SearchItineraryActivity.EXTRA_TRAJET);
-        this.setTitle(trajet.getmDepart() + " " + trajet.getmDestination() + " " + trajet.getmDate());
+        SearchRequestModel trajet = getIntent().getExtras().getParcelable(SearchItineraryActivity.EXTRA_TRAJET);
+        this.setTitle(trajet.getmDepart() + " " + trajet.getmDestination());
 
         Toast.makeText(ViewSearchItineraryResultsListActivity.this, getString(R.string.felicitations) + " " + trajet.getmDepart() + " " + getString(R.string.le) + " " + trajet.getmDate(),
                 Toast.LENGTH_LONG).show();
