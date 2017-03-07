@@ -25,13 +25,13 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
         android:ems="10"
         android:layout_below="@+id/textView"
         android:layout_alignLeft="@+id/textView"
         android:layout_alignStart="@+id/textView"
         android:layout_marginTop="16dp"
-        android:id="@+id/editTextSearchDeparture" />
+        android:id="@+id/editTextSearchDeparture"
+        android:inputType="textCapWords"/>
 
     <TextView
         android:text="@string/destination"
@@ -46,7 +46,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="textCapWords"
         android:ems="10"
         android:layout_below="@+id/textView2"
         android:layout_alignLeft="@+id/textView2"
