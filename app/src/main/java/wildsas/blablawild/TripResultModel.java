@@ -6,6 +6,8 @@ import java.util.Date;
  * Created by apprenti on 06/03/17.
  */
 
+// DONNEES QUE L'ON SOUHAITE RECUPÉRER DANS LA LISTE //
+
 public class TripResultModel {
     private String mFirstName;
     private Date mDepartureTime;

@@ -9,9 +9,7 @@ import android.widget.TextView;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
-/**
- * Created by apprenti on 06/03/17.
- */
+
 
 
 // Ici on lie le XML qui sert de modele à un item de la liste à l'adapter et à l'objet TripResultModel //
@@ -20,7 +18,7 @@ public class TripResultAdapter extends BaseAdapter{
     private Context context;
     private ArrayList<TripResultModel> mItems;
 
-    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy-hh:mm");
+
 
     private Context mContext;
     public TripResultAdapter(Context mContext, ArrayList<TripResultModel> items) {
@@ -62,6 +60,7 @@ public class TripResultAdapter extends BaseAdapter{
 
 
         textViewmFirstName.setText(currentItem.getFirstName());
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy-hh:mm");
         textViewmDepartureTime.setText(sdf.format(currentItem.getDepartureTime()));
         String stringPrice = String.valueOf(currentItem.getPrice());
         textViewPrice.setText(stringPrice);

@@ -72,7 +72,8 @@
         android:layout_alignRight="@+id/editTextSearchDestination"
         android:layout_alignEnd="@+id/editTextSearchDestination"
         android:layout_marginTop="13dp"
-        android:id="@+id/editTextSearchDate" />
+        android:id="@+id/editTextSearchDate"
+        android:focusable="false"/>
 
     <Button
         android:text="@string/search_text"
