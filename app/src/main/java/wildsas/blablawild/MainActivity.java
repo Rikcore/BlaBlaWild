@@ -14,6 +14,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button buttonAccueil;
+    Button buttonTrajet;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         buttonAccueil = (Button)findViewById(R.id.buttonAccueil);
+        buttonTrajet = (Button)findViewById(R.id.buttontrajet);
 
         buttonAccueil.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent goSearch = new Intent(MainActivity.this, SearchItineraryActivity.class);
                 startActivity(goSearch);
 
+            }
+        });
+
+        buttonTrajet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent goPurpose = new Intent(MainActivity.this, SubmitItineraryActivity.class);
+                startActivity(goPurpose);
             }
         });
     }

@@ -38,9 +38,12 @@ public class SearchItineraryActivity extends AppCompatActivity {
         mEditText3 = (EditText) findViewById(R.id.editTextSearchDate);
         button = (Button)findViewById(R.id.button);
 
+
+
+        //CALENDAR //
+
+
         final Calendar myCalendar = Calendar.getInstance();
-
-
 
         final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
 
@@ -74,6 +77,9 @@ public class SearchItineraryActivity extends AppCompatActivity {
                         myCalendar.get(Calendar.DAY_OF_MONTH)).show();
             }
         });
+
+
+        //CALENDAR//
 
 
 

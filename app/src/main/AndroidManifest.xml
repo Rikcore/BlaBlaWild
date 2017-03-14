@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="wildsas.blablawild">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,8 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SearchItineraryActivity" android:label="@string/search_text" />
-        <activity android:name=".ViewSearchItineraryResultsListActivity"></activity>
+        <activity
+            android:name=".SearchItineraryActivity"
+            android:label="@string/search_text" />
+        <activity android:name=".ViewSearchItineraryResultsListActivity" />
+        <activity android:name=".SubmitItineraryActivity"></activity>
     </application>
 
 </manifest>
